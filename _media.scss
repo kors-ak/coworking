@@ -1,0 +1,299 @@
+@media (max-width: 1200px) {
+  .center {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .overview {
+    gap: 8%;
+
+    &__heading {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+
+    &__img {
+      max-width: 38%;
+    }
+  }
+
+  .features {
+    padding-top: 42px;
+
+    &__title {
+      font-size: 28px;
+      margin-bottom: 42px;
+    }
+  }
+
+  .budget {
+    &__description {
+      padding-right: 8%;
+    }
+
+    &__img {
+      width: 78%;
+    }
+  }
+
+  .contact__description {
+    padding-right: 8%;
+  }
+}
+
+@media (max-width: 810px) {
+  .features__card {
+    max-width: 74%;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 42px;
+    padding-bottom: 62px;
+    flex-direction: column;
+    align-items: center;
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    &__text {
+      text-align: center;
+      max-width: 80%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top {
+
+    min-height: 100vh;
+
+    .header {
+      justify-content: space-between;
+      gap: 0;
+    }
+
+    &__info {
+      margin: 15%;
+    }
+
+    &__title {
+      margin-top: 32px;
+      font-size: 56px;
+    }
+
+    &__text {
+      margin-left: 0;
+      margin-right: 0;
+      font-size: 20px;
+    }
+  }
+
+  .overview {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 48px;
+    padding-bottom: 24px;
+
+    &__heading {
+      font-size: 24px;
+    }
+
+    &__content {
+      text-align: center;
+      max-width: 80%;
+    }
+
+    &__img {
+      max-width: 70%;
+    }
+  }
+
+  .features {
+    &__card {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 8px;
+      max-width: 84%;
+
+      &:nth-child(2n + 1) {
+        .features__img {
+          order: 1;
+        }
+      }
+    }
+
+    &__img {
+      width: 50%;
+      border-radius: 8px;
+    }
+
+    &__description {
+      padding: 4px 12px;
+    }
+
+    &__text {
+      margin: 24px 0 16px 0;
+    }
+  }
+
+  .budget {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 48px;
+    padding-bottom: 24px;
+
+    &__description {
+      padding: 0;
+      text-align: center;
+      max-width: 80%;
+    }
+
+    &__heading {
+      font-size: 24px;
+    }
+
+    &__img {
+      width: 70%;
+    }
+  }
+
+  .footer {
+    padding: 32px 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .top {
+    .header {
+      padding-top: 12px;
+      gap: 0;
+      justify-content: space-around;
+
+      &__logo {
+        max-width: 48px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      &__goto {
+        font-size: 12px;
+      }
+    }
+
+    &__info {
+      padding-top: 16vh;
+    }
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__button {
+      padding: 14px 34px;
+    }
+  }
+
+  .features {
+    &__card {
+      display: block;
+      border-radius: 0;
+      max-width: 90%;
+    }
+
+    &__img {
+      width: 100%;
+      border-radius: 0;
+    }
+
+    &__description {
+      padding: 16px 22px;
+    }
+  }
+
+  .overview {
+    &__content {
+      max-width: 100%;
+    }
+
+    &__img {
+      max-width: 90%;
+    }
+  }
+
+  .budget {
+    &__description {
+      max-width: 100%;
+    }
+
+    &__img {
+      max-width: 90%;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+    width: 100%;
+
+    input[type=text],
+    input[type=tel],
+    select {
+      font-size: 14px;
+      padding: 12px 0 12px 14px;
+
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+
+    button {
+      font-size: 12px;
+      padding: 12px 28px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .top {
+    .header {
+      justify-content: center;
+      padding-top: 22px;
+
+      &__logo {
+        display: block;
+        max-width: 72px;
+      }
+
+      &__nav {
+        display: none;
+      }
+    }
+
+    &__info {
+      margin: 0;
+    }
+  }
+}

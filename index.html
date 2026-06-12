@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <link rel="icon" href="favicon.svg" />
+  <link rel="mask-icon" href="favicon.svg" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coworking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+   rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+ </head>
+
+ <body>
+  <div class="top center">
+   <header class="header">
+    <a class="header__logo" href="index.html" title="Home page"
+     ><img src="img/logo.svg" alt="Logo"
+    /></a>
+    <nav aria-label="Main navigation">
+     <ul class="header__nav">
+      <li><a class="header__goto" href="#overview">Overview</a></li>
+      <li><a class="header__goto" href="#features">Features</a></li>
+      <li><a class="header__goto" href="#contact">Contact</a></li>
+     </ul>
+    </nav>
+   </header>
+
+   <section class="top__info">
+    <h1 class="top__title">Coworking</h1>
+    <p class="top__text">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptatibus
+     aperiam maiores id, incidunt repellendus mollitia
+    </p>
+    <a href="#contact" class="top__button">Sign Up</a>
+   </section>
+  </div>
+
+  <main class="overview center" id="overview">
+   <div class="overview__content">
+    <h3 class="overview__heading">Lorem ipsum dolor sit amet, consectetur</h3>
+    <p class="overview__text">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo maiores
+     accusamus dolorum maxime, quasi quis ab cum voluptatibus quo eveniet qui
+     reprehenderit nesciunt dolor sed porro molestias. A officia et laboriosam,
+     tenetur adipisci ex fugit consequatur quo ab corrupti vel
+    </p>
+    <a class="overview__goto" href="#features">Learn More</a>
+   </div>
+   <img class="overview__img" src="img/description.webp" alt="A discussion" />
+  </main>
+
+  <section class="features center" id="features">
+   <h2 class="features__title">Features</h2>
+
+   <div class="features__container">
+    <article class="features__card">
+     <img
+      class="features__img"
+      src="img/features-money.webp"
+      alt="Hands full of money"
+     />
+     <div class="features__description">
+      <h4 class="features__heading">Supports All Currencies and Cards</h4>
+      <p class="features__text">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo maiores
+       accusamus
+      </p>
+      <a class="features__goto" href="#budget">Read More</a>
+     </div>
+    </article>
+
+    <article class="features__card">
+     <img
+      class="features__img"
+      src="img/features-expenses.webp"
+      alt="Woman is managing her expenses"
+     />
+     <div class="features__description">
+      <h4 class="features__heading">Manage your expenses</h4>
+      <p class="features__text">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo maiores
+       accusamus
+      </p>
+      <a class="features__goto" href="#budget">Read More</a>
+     </div>
+    </article>
+
+    <article class="features__card">
+     <img
+      class="features__img"
+      src="img/features-software.webp"
+      alt="Large glassed hallway"
+     />
+     <div class="features__description">
+      <h4 class="features__heading">Perfect Software</h4>
+      <p class="features__text">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo maiores
+       accusamus
+      </p>
+      <a class="features__goto" href="#budget">Read More</a>
+     </div>
+    </article>
+   </div>
+  </section>
+
+  <section class="budget center" id="budget">
+   <div class="budget__description">
+    <h2 class="budget__heading">Stay focused on saving money</h2>
+    <p class="budget__text">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ullam
+     quia cumque, ipsa beatae voluptates dolore accusantium iure consequuntur,
+     rem deleniti repudiandae quae necessitatibus recusandae earum provident
+     alias quo reprehenderit! Itaque qui exercitationem
+    </p>
+   </div>
+   <img
+    class="budget__img"
+    src="img/budget.webp"
+    alt="A man sitting in a cafe"
+   />
+  </section>
+
+  <section class="contact center" id="contact">
+   <div class="contact__description">
+    <h2 class="contact__title">Contact</h2>
+    <p class="contact__text">
+     Questions or concerns? Just fill out the form below and our support team
+     will get back to you within 24 hours
+    </p>
+   </div>
+   <form class="form" action="#">
+    <input type="text" required name="firstName" placeholder="First Name" />
+    <input type="text" name="lastName" placeholder="Last Name" />
+    <input
+     type="tel"
+     required
+     name="mobile"
+     placeholder="Phone Number"
+     pattern="[0-9+\-\s]+"
+    />
+    <select name="coworking" id="coworking">
+     <option value="null" disabled selected>Select Coworking</option>
+     <option value="1">Coworking - 1</option>
+     <option value="2">Coworking - 2</option>
+    </select>
+    <button type="submit" aria-label="Submit form">Submit Now</button>
+   </form>
+  </section>
+
+  <footer class="footer center">Copyright 2022 CoWo</footer>
+ </body>
+</html>
